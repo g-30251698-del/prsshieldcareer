@@ -197,4 +197,155 @@
   "maksud": "Mereka bentuk pesawat dan sistem angkasa.",
   "laluan": "STEM → Kejuruteraan Aeroangkasa"
 }
-]  
+,
+{
+  "nama": "Ahli Aktuari",
+  "kategori": "Kewangan",
+  "maksud": "Menganalisis risiko menggunakan matematik dan statistik.",
+  "laluan": "STEM → Matematik → Aktuari"
+},
+{
+  "nama": "Penganalisis Sistem",
+  "kategori": "Teknologi",
+  "maksud": "Menganalisis dan menambah baik sistem komputer.",
+  "laluan": "STEM → Teknologi Maklumat"
+},
+{
+  "nama": "Pentadbir Pangkalan Data",
+  "kategori": "Teknologi",
+  "maksud": "Mengurus data organisasi.",
+  "laluan": "STEM → Sains Komputer"
+},
+{
+  "nama": "Pakar Rangkaian",
+  "kategori": "Teknologi",
+  "maksud": "Mengurus rangkaian komputer dan internet.",
+  "laluan": "STEM → Teknologi Maklumat"
+},
+{
+  "nama": "Pakar Blockchain",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan aplikasi berasaskan blockchain.",
+  "laluan": "STEM → Sains Komputer"
+},
+{
+  "nama": "Jurutera Perisian",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan sistem dan aplikasi komputer.",
+  "laluan": "STEM → Kejuruteraan Perisian"
+},
+{
+  "nama": "Pembangun Permainan",
+  "kategori": "Teknologi",
+  "maksud": "Mencipta permainan komputer dan mudah alih.",
+  "laluan": "STEM → Multimedia"
+},
+{
+  "nama": "Animator 3D",
+  "kategori": "Kreatif",
+  "maksud": "Menghasilkan animasi digital.",
+  "laluan": "STEM → Multimedia"
+},
+{
+  "nama": "Jurutera Marin",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mereka bentuk dan menyelenggara kapal.",
+  "laluan": "STEM → Kejuruteraan Marin"
+},
+{
+  "nama": "Jurutera Nuklear",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mengurus teknologi tenaga nuklear.",
+  "laluan": "STEM → Kejuruteraan Nuklear"
+},
+{
+  "nama": "Pegawai Forensik",
+  "kategori": "Sains",
+  "maksud": "Menganalisis bukti jenayah secara saintifik.",
+  "laluan": "STEM → Sains Forensik"
+},
+{
+  "nama": "Ahli Genetik",
+  "kategori": "Sains",
+  "maksud": "Mengkaji gen dan keturunan manusia.",
+  "laluan": "STEM → Genetik"
+},
+{
+  "nama": "Ahli Mikrobiologi",
+  "kategori": "Sains",
+  "maksud": "Mengkaji mikroorganisma.",
+  "laluan": "STEM → Mikrobiologi"
+},
+{
+  "nama": "Ahli Oseanografi",
+  "kategori": "Sains",
+  "maksud": "Mengkaji lautan dan hidupan marin.",
+  "laluan": "STEM → Oseanografi"
+},
+{
+  "nama": "Pegawai Kawalan Kualiti",
+  "kategori": "Industri",
+  "maksud": "Memastikan produk memenuhi standard.",
+  "laluan": "STEM → Sains Gunaan"
+},
+{
+  "nama": "Teknologis Makmal",
+  "kategori": "Perubatan",
+  "maksud": "Menjalankan ujian makmal.",
+  "laluan": "STEM → Teknologi Makmal Perubatan"
+},
+{
+  "nama": "Ahli Fisioterapi",
+  "kategori": "Perubatan",
+  "maksud": "Membantu pemulihan pergerakan pesakit.",
+  "laluan": "STEM → Fisioterapi"
+},
+{
+  "nama": "Ahli Dietetik",
+  "kategori": "Perubatan",
+  "maksud": "Memberi nasihat pemakanan.",
+  "laluan": "STEM → Dietetik"
+},
+{
+  "nama": "Optometris",
+  "kategori": "Perubatan",
+  "maksud": "Memeriksa kesihatan mata.",
+  "laluan": "STEM → Optometri"
+},
+{
+  "nama": "Radiografer",
+  "kategori": "Perubatan",
+  "maksud": "Mengendalikan peralatan pengimejan perubatan.",
+  "laluan": "STEM → Radiografi"
+},
+{
+  "nama": "Jurutera Automotif",
+  "kategori": "Kejuruteraan",
+  "maksud": "Mereka bentuk dan membaiki kenderaan.",
+  "laluan": "STEM → Kejuruteraan Automotif"
+},
+{
+  "nama": "Jurutera Mekatronik",
+  "kategori": "Kejuruteraan",
+  "maksud": "Menggabungkan mekanikal, elektronik dan komputer.",
+  "laluan": "STEM → Mekatronik"
+},
+{
+  "nama": "Pakar AI",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan kecerdasan buatan.",
+  "laluan": "STEM → AI"
+},
+{
+  "nama": "Pakar Machine Learning",
+  "kategori": "Teknologi",
+  "maksud": "Membangunkan model pembelajaran mesin.",
+  "laluan": "STEM → Data Science"
+},
+{
+  "nama": "Pakar DevOps",
+  "kategori": "Teknologi",
+  "maksud": "Mengurus pembangunan dan operasi sistem.",
+  "laluan": "STEM → Sains Komputer"
+}
+]
