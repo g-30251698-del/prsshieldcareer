@@ -83,15 +83,22 @@ function showPage(page){
 
 const result = document.getElementById("result");
 
-if(page==="dashboard"){
-result.innerHTML = `
+function showPage(page){
+
+if(page === "dashboard"){
+document.getElementById("result").innerHTML = `
 <h2>Dashboard</h2>
-<p>Selamat datang ke PRS SHIELD Career STEM Explorer.</p>
+<p>Jumlah Kerjaya: 100</p>
+<p>Kategori STEM: 45</p>
+<p>Kategori Teknologi: 20</p>
+<p>Kategori TVET: 20</p>
+<p>Kategori Perubatan: 15</p>
+<p>Kategori Pendidikan: 11</p>
 `;
 }
 
-if(page==="halatuju"){
-result.innerHTML = `
+if(page === "spm"){
+document.getElementById("result").innerHTML = `
 <h2>Hala Tuju Selepas SPM</h2>
 <ul>
 <li>STPM</li>
@@ -99,142 +106,95 @@ result.innerHTML = `
 <li>Asasi</li>
 <li>Diploma</li>
 <li>TVET</li>
+<li>A-Level</li>
 </ul>
+`;
+}
 
-<h3>Pilihan Kerjaya</h3>
+if(page === "tvet"){
+document.getElementById("result").innerHTML = `
+<h2>IPTA/IPTS/TVET</h2>
 <ul>
-<li>Kejuruteraan</li>
-<li>Perubatan</li>
-<li>Sains Komputer</li>
-<li>Data Science</li>
-<li>Pendidikan</li>
+<li>UMS</li>
+<li>UiTM</li>
+<li>UKM</li>
+<li>UPM</li>
+<li>UTM</li>
+<li>Politeknik Malaysia</li>
+<li>GIATMARA</li>
+<li>Kolej Vokasional</li>
 </ul>
+`;
+}
+
+if(page === "biasiswa"){
+document.getElementById("result").innerHTML = `
+<h2>Biasiswa</h2>
+<ul>
+<li>JPA</li>
+<li>MARA</li>
+<li>YTP MARA</li>
+<li>Yayasan Sabah</li>
+<li>PETRONAS</li>
+<li>Bank Negara</li>
+<li>Khazanah</li>
+</ul>
+`;
+}
+
+if(page === "future"){
+document.getElementById("result").innerHTML = `
+<h2>STEM Future Jobs</h2>
+<ul>
+<li>AI Engineer</li>
+<li>Quantum Engineer</li>
+<li>Data Scientist</li>
+<li>Cyber Security Analyst</li>
+<li>Robotics Engineer</li>
+<li>Space Technologist</li>
+<li>Renewable Energy Engineer</li>
+<li>Bioinformatics Scientist</li>
+</ul>
+`;
+}
+
+if(page === "guru"){
+document.getElementById("result").innerHTML = `
+<h2>Dashboard Guru</h2>
+<p>Jumlah Kerjaya: 100</p>
+<p>Modul Aktif: 7</p>
+<p>Ujian RIASEC: Aktif</p>
+<p>Kemaskini Terakhir: Jun 2025</p>
 `;
 }
 
 if(page === "riasec"){
 document.getElementById("result").innerHTML = `
-<h2>Ujian Minat Kerjaya RIASEC</h2>
+<h2>Ujian RIASEC</h2>
 
-<p>Tandakan Ya atau Tidak bagi setiap pernyataan.</p>
+<p>1. Saya suka membaiki mesin.
+<button onclick="score('R')">Ya</button></p>
 
-<h3>Realistik (R)</h3>
-<p>1. Saya suka membaiki mesin.</p>
-<p>2. Saya suka menggunakan peralatan teknikal.</p>
-<p>3. Saya suka kerja luar bangunan.</p>
-<p>4. Saya suka membina sesuatu.</p>
-<p>5. Saya suka mengendalikan kenderaan atau jentera.</p>
+<p>2. Saya suka eksperimen sains.
+<button onclick="score('I')">Ya</button></p>
 
-<h3>Investigatif (I)</h3>
-<p>6. Saya suka eksperimen sains.</p>
-<p>7. Saya suka menyelesaikan masalah kompleks.</p>
-<p>8. Saya suka mengkaji data.</p>
-<p>9. Saya suka membuat penyelidikan.</p>
-<p>10. Saya suka matematik dan logik.</p>
+<p>3. Saya suka melukis atau mereka bentuk.
+<button onclick="score('A')">Ya</button></p>
 
-<h3>Artistik (A)</h3>
-<p>11. Saya suka melukis.</p>
-<p>12. Saya suka menulis cerita.</p>
-<p>13. Saya suka muzik.</p>
-<p>14. Saya suka menghasilkan idea kreatif.</p>
-<p>15. Saya suka mereka bentuk grafik.</p>
+<p>4. Saya suka membantu orang lain.
+<button onclick="score('S')">Ya</button></p>
 
-<h3>Sosial (S)</h3>
-<p>16. Saya suka membantu orang lain.</p>
-<p>17. Saya suka mengajar.</p>
-<p>18. Saya suka kerja berkumpulan.</p>
-<p>19. Saya suka mendengar masalah orang.</p>
-<p>20. Saya suka aktiviti sukarelawan.</p>
+<p>5. Saya suka memimpin kumpulan.
+<button onclick="score('E')">Ya</button></p>
 
-<h3>Enterprising (E)</h3>
-<p>21. Saya suka memimpin kumpulan.</p>
-<p>22. Saya suka berniaga.</p>
-<p>23. Saya suka mempengaruhi orang lain.</p>
-<p>24. Saya suka membuat keputusan.</p>
-<p>25. Saya suka merancang projek.</p>
+<p>6. Saya suka menyusun fail dan data.
+<button onclick="score('C')">Ya</button></p>
 
-<h3>Conventional (C)</h3>
-<p>26. Saya suka menyusun fail.</p>
-<p>27. Saya suka kerja yang teratur.</p>
-<p>28. Saya suka mengurus rekod.</p>
-<p>29. Saya suka menggunakan spreadsheet.</p>
-<p>30. Saya suka mengendalikan data.</p>
+<hr>
 
-<p><b>R</b> = Realistik</p>
-<p><b>I</b> = Investigatif</p>
-<p><b>A</b> = Artistik</p>
-<p><b>S</b> = Sosial</p>
-<p><b>E</b> = Enterprising</p>
-<p><b>C</b> = Conventional</p>
-`;
-}
+<div id="riasecResult"></div>
 
-if(page==="ipta"){
-result.innerHTML = `
-<h2>IPTA / IPTS / TVET</h2>
-
-<h3>IPTA</h3>
-<ul>
-<li>UM</li>
-<li>UKM</li>
-<li>UPM</li>
-<li>UTM</li>
-<li>UMS</li>
-<li>UNIMAS</li>
-</ul>
-
-<h3>TVET</h3>
-<ul>
-<li>Politeknik</li>
-<li>Kolej Komuniti</li>
-<li>ILP</li>
-<li>ADTEC</li>
-<li>GiatMARA</li>
-</ul>
-`;
-}
-
-if(page==="biasiswa"){
-result.innerHTML = `
-<h2>Biasiswa</h2>
-<ul>
-<li>JPA</li>
-<li>MARA</li>
-<li>Yayasan Sabah</li>
-<li>PETRONAS</li>
-<li>Khazanah</li>
-<li>Bank Negara</li>
-<li>Shell</li>
-<li>TNB</li>
-</ul>
-`;
-}
-
-if(page==="future"){
-result.innerHTML = `
-<h2>STEM Future Jobs</h2>
-<ul>
-<li>AI Engineer</li>
-<li>Machine Learning Engineer</li>
-<li>Cyber Security Analyst</li>
-<li>Data Scientist</li>
-<li>Robotics Engineer</li>
-<li>Cloud Architect</li>
-<li>Drone Specialist</li>
-<li>Renewable Energy Engineer</li>
-</ul>
-`;
-}
-
-if(page==="guru"){
-result.innerHTML = `
-<h2>Dashboard Guru</h2>
-
-<p>Jumlah Kerjaya: 126</p>
-<p>Kategori STEM: 80</p>
-<p>Kategori TVET: 20</p>
-<p>Kategori Perubatan: 15</p>
-<p>Kategori Pendidikan: 11</p>
+<button onclick="showResult()">Lihat Keputusan</button>
 `;
 }
 
