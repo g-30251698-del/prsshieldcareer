@@ -78,63 +78,121 @@ document.getElementById("result").innerHTML = `
 `;
 }
 
-if(page === "spm"){
+if(page === "biasiswa"){
 document.getElementById("result").innerHTML = `
-<h2>Hala Tuju Selepas SPM</h2>
-<ul>
-<li>STPM</li>
-<li>Matrikulasi</li>
-<li>Asasi</li>
-<li>Diploma</li>
-<li>TVET</li>
-<li>A-Level</li>
-</ul>
+<h2>Biasiswa</h2>
+
+<p>Pautan rasmi biasiswa dan bantuan pendidikan.</p>
+
+<p>
+<a href="https://biasiswa.mohe.gov.my" target="_blank">
+🎓 Biasiswa Kementerian Pendidikan Tinggi (KPT)
+</a>
+</p>
+
+<p>
+<a href="https://www.jpa.gov.my" target="_blank">
+🏛 Biasiswa Jabatan Perkhidmatan Awam (JPA)
+</a>
+</p>
+
+<p>
+<a href="https://www.mara.gov.my" target="_blank">
+📚 Biasiswa dan Pinjaman MARA
+</a>
+</p>
+
+<p>
+<a href="https://www.yayasansabahgroup.org.my" target="_blank">
+🌟 Biasiswa Yayasan Sabah
+</a>
+</p>
+
+<p>
+<a href="https://www.petronas.com" target="_blank">
+⛽ Biasiswa PETRONAS
+</a>
+</p>
 `;
 }
-
 if(page === "tvet"){
 document.getElementById("result").innerHTML = `
 <h2>IPTA/IPTS/TVET</h2>
-<ul>
-<li>UMS</li>
-<li>UiTM</li>
-<li>UKM</li>
-<li>UPM</li>
-<li>UTM</li>
-<li>Politeknik Malaysia</li>
-<li>GIATMARA</li>
-<li>Kolej Vokasional</li>
-</ul>
+
+<p>Maklumat kemasukan ke universiti awam, politeknik, kolej komuniti dan institusi TVET.</p>
+
+<p>
+<a href="https://upu.mohe.gov.my" target="_blank">
+🌐 Portal Rasmi UPU Online
+</a>
+</p>
+
+<p>
+<a href="https://www.mohe.gov.my" target="_blank">
+🎓 Kementerian Pendidikan Tinggi (KPT)
+</a>
+</p>
+
+<p>
+<a href="https://www.tvet.gov.my" target="_blank">
+🛠 Portal TVET Malaysia
+</a>
+</p>
 `;
 }
 
 if(page === "biasiswa"){
 document.getElementById("result").innerHTML = `
 <h2>Biasiswa</h2>
-<ul>
-<li>JPA</li>
-<li>MARA</li>
-<li>YTP MARA</li>
-<li>Yayasan Sabah</li>
-<li>PETRONAS</li>
-<li>Bank Negara</li>
-<li>Khazanah</li>
-</ul>
+
+<p>Pautan rasmi biasiswa dan bantuan pendidikan.</p>
+
+<p>
+<a href="https://biasiswa.mohe.gov.my" target="_blank">
+🎓 Biasiswa Kementerian Pendidikan Tinggi (KPT)
+</a>
+</p>
+
+<p>
+<a href="https://www.jpa.gov.my" target="_blank">
+🏛 Biasiswa Jabatan Perkhidmatan Awam (JPA)
+</a>
+</p>
+
+<p>
+<a href="https://www.mara.gov.my" target="_blank">
+📚 Biasiswa dan Pinjaman MARA
+</a>
+</p>
+
+<p>
+<a href="https://www.yayasansabahgroup.org.my" target="_blank">
+🌟 Biasiswa Yayasan Sabah
+</a>
+</p>
+
+<p>
+<a href="https://www.petronas.com" target="_blank">
+⛽ Biasiswa PETRONAS
+</a>
+</p>
 `;
 }
-
 if(page === "future"){
 document.getElementById("result").innerHTML = `
 <h2>STEM Future Jobs</h2>
+
 <ul>
 <li>AI Engineer</li>
-<li>Quantum Engineer</li>
 <li>Data Scientist</li>
 <li>Cyber Security Analyst</li>
 <li>Robotics Engineer</li>
-<li>Space Technologist</li>
+<li>Aerospace Engineer</li>
+<li>Quantum Computing Specialist</li>
 <li>Renewable Energy Engineer</li>
-<li>Bioinformatics Scientist</li>
+<li>Biotechnology Researcher</li>
+<li>Cloud Computing Engineer</li>
+<li>IoT Specialist</li>
 </ul>
 `;
 }
@@ -199,32 +257,6 @@ document.getElementById("result").innerHTML = `
 <div id="riasecResult"></div>
 <button onclick="showResult()">Lihat Keputusan</button>
 `;
-}
-
-if(page === "future"){
-  document.getElementById("result").innerHTML =
-  "<h2>STEM Future Jobs</h2><p>AI Engineer, Quantum Engineer, Space Scientist, Robotics Engineer.</p>";
-}
-
-if(page === "guru"){
-  document.getElementById("result").innerHTML =
-  "<h2>Dashboard Guru</h2><p>Laporan dan analitik pelajar.</p>";
-}
-
-  if(page === "spm"){
-    document.getElementById("result").innerHTML =
-    "<h2>Hala Tuju Selepas SPM</h2><ul><li>STEM</li><li>Matrikulasi</li><li>Asasi</li><li>TVET</li></ul>";
-  }
-
-  if(page === "biasiswa"){
-    document.getElementById("result").innerHTML =
-    "<h2>Biasiswa</h2><ul><li>JPA</li><li>MARA</li><li>YTP</li><li>PETRONAS</li></ul>";
-  }
-
-  if(page === "tvet"){
-    document.getElementById("result").innerHTML =
-    "<h2>IPTA/IPTS/TVET</h2><p>Senarai universiti dan kolej TVET.</p>";
-  }
 }
 let riasec = {
 R:0,
