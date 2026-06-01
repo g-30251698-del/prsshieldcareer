@@ -112,15 +112,60 @@ result.innerHTML = `
 `;
 }
 
-if(page==="riasec"){
-result.innerHTML = `
-<h2>Ujian RIASEC</h2>
-<p>R - Realistic</p>
-<p>I - Investigative</p>
-<p>A - Artistic</p>
-<p>S - Social</p>
-<p>E - Enterprising</p>
-<p>C - Conventional</p>
+if(page === "riasec"){
+document.getElementById("result").innerHTML = `
+<h2>Ujian Minat Kerjaya RIASEC</h2>
+
+<p>Tandakan Ya atau Tidak bagi setiap pernyataan.</p>
+
+<h3>Realistik (R)</h3>
+<p>1. Saya suka membaiki mesin.</p>
+<p>2. Saya suka menggunakan peralatan teknikal.</p>
+<p>3. Saya suka kerja luar bangunan.</p>
+<p>4. Saya suka membina sesuatu.</p>
+<p>5. Saya suka mengendalikan kenderaan atau jentera.</p>
+
+<h3>Investigatif (I)</h3>
+<p>6. Saya suka eksperimen sains.</p>
+<p>7. Saya suka menyelesaikan masalah kompleks.</p>
+<p>8. Saya suka mengkaji data.</p>
+<p>9. Saya suka membuat penyelidikan.</p>
+<p>10. Saya suka matematik dan logik.</p>
+
+<h3>Artistik (A)</h3>
+<p>11. Saya suka melukis.</p>
+<p>12. Saya suka menulis cerita.</p>
+<p>13. Saya suka muzik.</p>
+<p>14. Saya suka menghasilkan idea kreatif.</p>
+<p>15. Saya suka mereka bentuk grafik.</p>
+
+<h3>Sosial (S)</h3>
+<p>16. Saya suka membantu orang lain.</p>
+<p>17. Saya suka mengajar.</p>
+<p>18. Saya suka kerja berkumpulan.</p>
+<p>19. Saya suka mendengar masalah orang.</p>
+<p>20. Saya suka aktiviti sukarelawan.</p>
+
+<h3>Enterprising (E)</h3>
+<p>21. Saya suka memimpin kumpulan.</p>
+<p>22. Saya suka berniaga.</p>
+<p>23. Saya suka mempengaruhi orang lain.</p>
+<p>24. Saya suka membuat keputusan.</p>
+<p>25. Saya suka merancang projek.</p>
+
+<h3>Conventional (C)</h3>
+<p>26. Saya suka menyusun fail.</p>
+<p>27. Saya suka kerja yang teratur.</p>
+<p>28. Saya suka mengurus rekod.</p>
+<p>29. Saya suka menggunakan spreadsheet.</p>
+<p>30. Saya suka mengendalikan data.</p>
+
+<p><b>R</b> = Realistik</p>
+<p><b>I</b> = Investigatif</p>
+<p><b>A</b> = Artistik</p>
+<p><b>S</b> = Sosial</p>
+<p><b>E</b> = Enterprising</p>
+<p><b>C</b> = Conventional</p>
 `;
 }
 
@@ -196,8 +241,31 @@ result.innerHTML = `
 }
 function showPage(page){
 if(page === "riasec"){
-  document.getElementById("result").innerHTML =
-  "<h2>Ujian RIASEC</h2><p>Modul ujian minat kerjaya akan ditambah.</p>";
+document.getElementById("result").innerHTML = `
+<h2>Ujian RIASEC</h2>
+
+<p>1. Saya suka membaiki mesin.
+<button onclick="score('R')">Ya</button></p>
+
+<p>2. Saya suka eksperimen sains.
+<button onclick="score('I')">Ya</button></p>
+
+<p>3. Saya suka melukis atau mereka bentuk.
+<button onclick="score('A')">Ya</button></p>
+
+<p>4. Saya suka membantu orang lain.
+<button onclick="score('S')">Ya</button></p>
+
+<p>5. Saya suka memimpin kumpulan.
+<button onclick="score('E')">Ya</button></p>
+
+<p>6. Saya suka menyusun fail dan data.
+<button onclick="score('C')">Ya</button></p>
+
+<hr>
+<div id="riasecResult"></div>
+<button onclick="showResult()">Lihat Keputusan</button>
+`;
 }
 
 if(page === "future"){
@@ -229,8 +297,47 @@ if(page === "guru"){
     "<h2>IPTA/IPTS/TVET</h2><p>Senarai universiti dan kolej TVET.</p>";
   }
 }
-</script>
-<script>
+let riasec = {
+R:0,
+I:0,
+A:0,
+S:0,
+E:0,
+C:0
+};
+
+function score(type){
+riasec[type]++;
+alert("Jawapan direkodkan");
+}
+
+function showResult(){
+
+let max = Math.max(
+riasec.R,
+riasec.I,
+riasec.A,
+riasec.S,
+riasec.E,
+riasec.C
+);
+
+let result = Object.keys(riasec)
+.find(key => riasec[key] === max);
+
+let career = "";
+
+if(result==="R") career="Jurutera Awam, Juruteknik, Mekanik";
+if(result==="I") career="Saintis Data, Doktor, Penyelidik";
+if(result==="A") career="Pereka Grafik, Animator, Arkitek";
+if(result==="S") career="Guru, Kaunselor, Jururawat";
+if(result==="E") career="Usahawan, Pengurus, Pegawai Pemasaran";
+if(result==="C") career="Akauntan, Kerani, Pentadbir";
+
+document.getElementById("riasecResult").innerHTML =
+"<h3>Kod Dominan: "+result+"</h3>" +
+"<p>Cadangan Kerjaya: "+career+"</p>";
+}
 
 let jobs = {};
 
