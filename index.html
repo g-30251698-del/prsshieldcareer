@@ -212,35 +212,6 @@ document.getElementById("result").innerHTML = `
 <button onclick="showResult()">Lihat Keputusan</button>
 `;
 }
-}
-function showPage(page){
-if(page === "riasec"){
-document.getElementById("result").innerHTML = `
-<h2>Ujian RIASEC</h2>
-
-<p>1. Saya suka membaiki mesin.
-<button onclick="score('R')">Ya</button></p>
-
-<p>2. Saya suka eksperimen sains.
-<button onclick="score('I')">Ya</button></p>
-
-<p>3. Saya suka melukis atau mereka bentuk.
-<button onclick="score('A')">Ya</button></p>
-
-<p>4. Saya suka membantu orang lain.
-<button onclick="score('S')">Ya</button></p>
-
-<p>5. Saya suka memimpin kumpulan.
-<button onclick="score('E')">Ya</button></p>
-
-<p>6. Saya suka menyusun fail dan data.
-<button onclick="score('C')">Ya</button></p>
-
-<hr>
-<div id="riasecResult"></div>
-<button onclick="showResult()">Lihat Keputusan</button>
-`;
-}
 
 if(page === "future"){
   document.getElementById("result").innerHTML =
