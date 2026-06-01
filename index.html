@@ -76,7 +76,9 @@ fetch('careers.json')
 document.getElementById('search').addEventListener('keypress', function(e){
  if(e.key==='Enter'){
    let q=this.value.toLowerCase().trim();
-   let j=jobs[q];
+   let j = jobs.find(job =>
+    job.nama.toLowerCase() === q
+);
    document.getElementById('result').innerHTML = j ?
    <h2>${j.nama}</h2>
 <p><b>Kategori:</b> ${j.kategori}</p>
