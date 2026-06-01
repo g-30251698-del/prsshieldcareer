@@ -165,114 +165,50 @@ if(page === "riasec"){
 document.getElementById("result").innerHTML = `
 <h2>Inventori Minat Kerjaya</h2>
 
-<p><i>Berdasarkan Model Holland (RIASEC)</i></p>
+<h3>Realistik (R)</h3>
+<p>1. Saya suka membaiki mesin. <button onclick="score('R')">Ya</button></p>
+<p>2. Saya suka menggunakan peralatan teknikal. <button onclick="score('R')">Ya</button></p>
+<p>3. Saya suka kerja luar bangunan. <button onclick="score('R')">Ya</button></p>
+<p>4. Saya suka membina sesuatu dengan tangan. <button onclick="score('R')">Ya</button></p>
+<p>5. Saya suka mengendalikan mesin atau kenderaan. <button onclick="score('R')">Ya</button></p>
 
-<h3>R - Realistik</h3>
+<h3>Investigatif (I)</h3>
+<p>6. Saya suka eksperimen sains. <button onclick="score('I')">Ya</button></p>
+<p>7. Saya suka menyelesaikan masalah rumit. <button onclick="score('I')">Ya</button></p>
+<p>8. Saya suka membuat kajian. <button onclick="score('I')">Ya</button></p>
+<p>9. Saya suka menganalisis data. <button onclick="score('I')">Ya</button></p>
+<p>10. Saya suka matematik dan sains. <button onclick="score('I')">Ya</button></p>
 
-<p>1. Saya suka membaiki mesin atau peralatan.
-<button onclick="score('R')">Ya</button></p>
+<h3>Artistik (A)</h3>
+<p>11. Saya suka melukis. <button onclick="score('A')">Ya</button></p>
+<p>12. Saya suka mereka bentuk. <button onclick="score('A')">Ya</button></p>
+<p>13. Saya suka menghasilkan karya kreatif. <button onclick="score('A')">Ya</button></p>
+<p>14. Saya suka muzik atau seni. <button onclick="score('A')">Ya</button></p>
+<p>15. Saya suka mencipta idea baharu. <button onclick="score('A')">Ya</button></p>
 
-<p>2. Saya suka menggunakan alatan teknikal.
-<button onclick="score('R')">Ya</button></p>
+<h3>Sosial (S)</h3>
+<p>16. Saya suka membantu orang lain. <button onclick="score('S')">Ya</button></p>
+<p>17. Saya suka mengajar. <button onclick="score('S')">Ya</button></p>
+<p>18. Saya suka bekerja dalam kumpulan. <button onclick="score('S')">Ya</button></p>
+<p>19. Saya suka mendengar masalah orang lain. <button onclick="score('S')">Ya</button></p>
+<p>20. Saya suka aktiviti khidmat masyarakat. <button onclick="score('S')">Ya</button></p>
 
-<p>3. Saya suka kerja luar bangunan.
-<button onclick="score('R')">Ya</button></p>
+<h3>Enterprising (E)</h3>
+<p>21. Saya suka memimpin kumpulan. <button onclick="score('E')">Ya</button></p>
+<p>22. Saya suka berniaga. <button onclick="score('E')">Ya</button></p>
+<p>23. Saya suka mempengaruhi orang lain. <button onclick="score('E')">Ya</button></p>
+<p>24. Saya suka membuat keputusan. <button onclick="score('E')">Ya</button></p>
+<p>25. Saya suka merancang projek. <button onclick="score('E')">Ya</button></p>
 
-<p>4. Saya suka membina atau memasang sesuatu.
-<button onclick="score('R')">Ya</button></p>
-
-<p>5. Saya suka kerja yang melibatkan kemahiran tangan.
-<button onclick="score('R')">Ya</button></p>
-
-<h3>I - Investigatif</h3>
-
-<p>6. Saya suka menjalankan eksperimen.
-<button onclick="score('I')">Ya</button></p>
-
-<p>7. Saya suka menyelesaikan masalah yang rumit.
-<button onclick="score('I')">Ya</button></p>
-
-<p>8. Saya suka matematik dan sains.
-<button onclick="score('I')">Ya</button></p>
-
-<p>9. Saya suka membuat penyelidikan.
-<button onclick="score('I')">Ya</button></p>
-
-<p>10. Saya suka menganalisis data.
-<button onclick="score('I')">Ya</button></p>
-
-<h3>A - Artistik</h3>
-
-<p>11. Saya suka melukis.
-<button onclick="score('A')">Ya</button></p>
-
-<p>12. Saya suka menghasilkan idea kreatif.
-<button onclick="score('A')">Ya</button></p>
-
-<p>13. Saya suka muzik atau seni.
-<button onclick="score('A')">Ya</button></p>
-
-<p>14. Saya suka mereka bentuk poster atau grafik.
-<button onclick="score('A')">Ya</button></p>
-
-<p>15. Saya suka menulis cerita atau puisi.
-<button onclick="score('A')">Ya</button></p>
-
-<h3>S - Sosial</h3>
-
-<p>16. Saya suka membantu orang lain.
-<button onclick="score('S')">Ya</button></p>
-
-<p>17. Saya suka mengajar rakan-rakan.
-<button onclick="score('S')">Ya</button></p>
-
-<p>18. Saya suka kerja berkumpulan.
-<button onclick="score('S')">Ya</button></p>
-
-<p>19. Saya suka mendengar masalah orang lain.
-<button onclick="score('S')">Ya</button></p>
-
-<p>20. Saya suka aktiviti kebajikan.
-<button onclick="score('S')">Ya</button></p>
-
-<h3>E - Enterprising</h3>
-
-<p>21. Saya suka memimpin kumpulan.
-<button onclick="score('E')">Ya</button></p>
-
-<p>22. Saya suka berniaga.
-<button onclick="score('E')">Ya</button></p>
-
-<p>23. Saya suka mempengaruhi orang lain.
-<button onclick="score('E')">Ya</button></p>
-
-<p>24. Saya suka membuat keputusan.
-<button onclick="score('E')">Ya</button></p>
-
-<p>25. Saya suka merancang aktiviti atau projek.
-<button onclick="score('E')">Ya</button></p>
-
-<h3>C - Konvensional</h3>
-
-<p>26. Saya suka menyusun fail.
-<button onclick="score('C')">Ya</button></p>
-
-<p>27. Saya suka kerja yang teratur.
-<button onclick="score('C')">Ya</button></p>
-
-<p>28. Saya suka mengurus rekod atau data.
-<button onclick="score('C')">Ya</button></p>
-
-<p>29. Saya suka mengikut prosedur kerja.
-<button onclick="score('C')">Ya</button></p>
-
-<p>30. Saya suka membuat jadual dan perancangan.
-<button onclick="score('C')">Ya</button></p>
+<h3>Konvensional (C)</h3>
+<p>26. Saya suka menyusun fail. <button onclick="score('C')">Ya</button></p>
+<p>27. Saya suka kerja yang teratur. <button onclick="score('C')">Ya</button></p>
+<p>28. Saya suka mengurus rekod dan data. <button onclick="score('C')">Ya</button></p>
+<p>29. Saya suka mengikut prosedur. <button onclick="score('C')">Ya</button></p>
+<p>30. Saya suka kerja pejabat yang sistematik. <button onclick="score('C')">Ya</button></p>
 
 <hr>
-
 <div id="riasecResult"></div>
-
 <button onclick="showResult()">Lihat Keputusan</button>
 `;
 }
@@ -345,8 +281,7 @@ C:0
 };
 
 function score(type){
-riasec[type]++;
-alert("Jawapan direkodkan");
+    riasec[type]++;
 }
 
 function showResult(){
@@ -362,7 +297,13 @@ riasec.C
 
 let result = Object.keys(riasec)
 .find(key => riasec[key] === max);
-
+let markah =
+"R: " + riasec.R + "<br>" +
+"I: " + riasec.I + "<br>" +
+"A: " + riasec.A + "<br>" +
+"S: " + riasec.S + "<br>" +
+"E: " + riasec.E + "<br>" +
+"C: " + riasec.C;
 let career = "";
 
 if(result==="R") career="Jurutera Awam, Juruteknik, Mekanik";
@@ -373,8 +314,9 @@ if(result==="E") career="Usahawan, Pengurus, Pegawai Pemasaran";
 if(result==="C") career="Akauntan, Kerani, Pentadbir";
 
 document.getElementById("riasecResult").innerHTML =
-"<h3>Kod Minat Dominan: "+result+"</h3>" +
-"<p><b>Cadangan Kerjaya:</b> "+career+"</p>";
+"<h3>Kod Dominan: " + result + "</h3>" +
+"<p><b>Markah RIASEC</b><br>" + markah + "</p>" +
+"<p>Cadangan Kerjaya: " + career + "</p>";
 }
 let jobs = {};
 
