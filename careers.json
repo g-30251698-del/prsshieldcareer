@@ -1,0 +1,20 @@
+[
+  {
+    "nama": "Jurutera Awam",
+    "kategori": "STEM",
+    "maksud": "Merancang dan membina jalan raya, jambatan dan bangunan.",
+    "laluan": "STEM → Matrikulasi → Ijazah Kejuruteraan Awam"
+  },
+  {
+    "nama": "Doktor",
+    "kategori": "Perubatan",
+    "maksud": "Merawat dan mendiagnosis pesakit.",
+    "laluan": "STEM → Asasi Sains → Ijazah Perubatan"
+  },
+  {
+    "nama": "Saintis Data",
+    "kategori": "Teknologi",
+    "maksud": "Menganalisis data untuk membantu organisasi membuat keputusan.",
+    "laluan": "STEM → Ijazah Data Science"
+  }
+]
