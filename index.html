@@ -73,18 +73,24 @@ fetch('careers.json')
     console.error('Error loading careers.json:', error);
   });
 
-document.getElementById('search').addEventListener('keypress', function(e){
+document.getElementById('search').addEventListener('keydown', function(e){
  if(e.key==='Enter'){
    let q=this.value.toLowerCase().trim();
    let j = jobs.find(job =>
     job.nama.toLowerCase() === q
 );
    document.getElementById('result').innerHTML = j ?
-   <h2>${j.nama}</h2>
+`
+<h2>${j.nama}</h2>
 <p><b>Kategori:</b> ${j.kategori}</p>
 <p><b>Maksud:</b> ${j.maksud}</p>
 <p><b>Laluan:</b> ${j.laluan}</p>
-   '<h2>Tiada rekod</h2><p>Tambah data JSON untuk mencapai 1000+ kerjaya.</p>';
+`
+:
+`
+<h2>Tiada rekod</h2>
+<p>Tambah data JSON untuk mencapai 1000+ kerjaya.</p>
+`;
  }
 });
 </script>
