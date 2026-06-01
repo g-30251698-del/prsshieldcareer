@@ -62,31 +62,16 @@ input{width:100%;padding:14px;font-size:18px}
 
 <script>
 const jobs = {
-"jurutera ai": {
-maksud:"Membangunkan sistem kecerdasan buatan.",
-gaji:"RM5,000 - RM25,000+",
-laluan:"SPM STEM → Matrikulasi/Asasi → Ijazah AI/Sains Komputer",
-prospek:"Sangat Tinggi"
-},
-"saintis data": {
-maksud:"Menganalisis data untuk membuat keputusan organisasi.",
-gaji:"RM4,000 - RM18,000+",
-laluan:"SPM STEM → Data Science",
-prospek:"Sangat Tinggi"
-},
-"doktor": {
-maksud:"Merawat dan mendiagnosis pesakit.",
-gaji:"RM4,000 - RM25,000+",
-laluan:"SPM Sains → MBBS",
-prospek:"Tinggi"
-},
-"pakar keselamatan siber": {
-maksud:"Melindungi sistem dan rangkaian daripada serangan siber.",
-gaji:"RM4,500 - RM20,000+",
-laluan:"SPM STEM → Cyber Security",
-prospek:"Sangat Tinggi"
-}
-};
+let jobs = {};
+
+fetch('careers.json')
+  .then(response => response.json())
+  .then(data => {
+    jobs = data;
+  })
+  .catch(error => {
+    console.error('Error loading careers.json:', error);
+  });
 
 document.getElementById('search').addEventListener('keypress', function(e){
  if(e.key==='Enter'){
