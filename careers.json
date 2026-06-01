@@ -348,4 +348,117 @@
   "maksud": "Mengurus pembangunan dan operasi sistem.",
   "laluan": "STEM → Sains Komputer"
 }
+"nama":"Jurutera Solar",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mereka bentuk sistem tenaga suria.",
+  "laluan":"STEM → Tenaga Solar"
+},
+{
+  "nama":"Jurutera Angin",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan sistem tenaga angin.",
+  "laluan":"STEM → Tenaga Angin"
+},
+{
+  "nama":"Pakar Smart City",
+  "kategori":"Teknologi",
+  "maksud":"Membangunkan bandar pintar.",
+  "laluan":"STEM → Teknologi Bandar Pintar"
+},
+{
+  "nama":"Pakar Digital Twin",
+  "kategori":"Teknologi",
+  "maksud":"Membina model digital aset sebenar.",
+  "laluan":"STEM → Teknologi Digital Twin"
+},
+{
+  "nama":"Pakar AR VR",
+  "kategori":"Teknologi",
+  "maksud":"Membangunkan realiti maya dan tambahan.",
+  "laluan":"STEM → Multimedia"
+},
+{
+  "nama":"Pereka Cip",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mereka bentuk cip elektronik.",
+  "laluan":"STEM → Mikroelektronik"
+},
+{
+  "nama":"Jurutera Semikonduktor",
+  "kategori":"Kejuruteraan",
+  "maksud":"Membangunkan teknologi cip.",
+  "laluan":"STEM → Semikonduktor"
+},
+{
+  "nama":"Pakar QA Software",
+  "kategori":"Teknologi",
+  "maksud":"Menguji kualiti perisian.",
+  "laluan":"STEM → Sains Komputer"
+},
+{
+  "nama":"Pentester",
+  "kategori":"Teknologi",
+  "maksud":"Menguji keselamatan sistem.",
+  "laluan":"STEM → Keselamatan Siber"
+},
+{
+  "nama":"Pakar Forensik Digital",
+  "kategori":"Teknologi",
+  "maksud":"Menyiasat bukti digital.",
+  "laluan":"STEM → Keselamatan Siber"
+},
+{
+  "nama":"Pakar Kriptografi",
+  "kategori":"Teknologi",
+  "maksud":"Membangunkan sistem penyulitan.",
+  "laluan":"STEM → Keselamatan Siber"
+},
+{
+  "nama":"Pengurus Projek IT",
+  "kategori":"Teknologi",
+  "maksud":"Mengurus projek teknologi maklumat.",
+  "laluan":"STEM → IT"
+},
+{
+  "nama":"Pakar ERP",
+  "kategori":"Teknologi",
+  "maksud":"Mengurus sistem perusahaan.",
+  "laluan":"STEM → Sistem Maklumat"
+},
+{
+  "nama":"Pakar Automasi Industri",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mengautomasi proses kilang.",
+  "laluan":"STEM → Automasi"
+},
+{
+  "nama":"Jurutera Industri",
+  "kategori":"Kejuruteraan",
+  "maksud":"Menambah baik operasi industri.",
+  "laluan":"STEM → Kejuruteraan Industri"
+},
+{
+  "nama":"Jurutera Logistik",
+  "kategori":"Kejuruteraan",
+  "maksud":"Mengurus rantaian bekalan.",
+  "laluan":"STEM → Logistik"
+},
+{
+  "nama":"Pakar Supply Chain",
+  "kategori":"Industri",
+  "maksud":"Mengurus aliran bahan dan produk.",
+  "laluan":"STEM → Logistik"
+},
+{
+  "nama":"Pegawai Keselamatan dan Kesihatan",
+  "kategori":"Industri",
+  "maksud":"Memastikan keselamatan tempat kerja.",
+  "laluan":"STEM → OSH"
+},
+{
+  "nama":"Pakar ESG",
+  "kategori":"Industri",
+  "maksud":"Mengurus kelestarian organisasi.",
+  "laluan":"STEM → Kelestarian"
+}
 ]
