@@ -78,11 +78,10 @@ document.getElementById('search').addEventListener('keypress', function(e){
    let q=this.value.toLowerCase().trim();
    let j=jobs[q];
    document.getElementById('result').innerHTML = j ?
-   `<h2>${q.toUpperCase()}</h2>
-   <p><b>Maksud:</b> ${j.maksud}</p>
-   <p><b>Gaji:</b> ${j.gaji}</p>
-   <p><b>Laluan Selepas SPM:</b> ${j.laluan}</p>
-   <p><b>Prospek:</b> ${j.prospek}</p>` :
+   <h2>${j.nama}</h2>
+<p><b>Kategori:</b> ${j.kategori}</p>
+<p><b>Maksud:</b> ${j.maksud}</p>
+<p><b>Laluan:</b> ${j.laluan}</p>
    '<h2>Tiada rekod</h2><p>Tambah data JSON untuk mencapai 1000+ kerjaya.</p>';
  }
 });
